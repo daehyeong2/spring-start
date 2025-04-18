@@ -1,4 +1,4 @@
-package todo.todo_server.controller;
+package study.lecture.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

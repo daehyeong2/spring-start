@@ -1,4 +1,4 @@
-package todo.todo_server.domain;
+package study.lecture.domain;
 
 public class Member {
   private Long id;

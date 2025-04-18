@@ -1,11 +1,11 @@
-package todo.todo_server.repository;
+package study.lecture.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import todo.todo_server.domain.Member;
+import study.lecture.domain.Member;
 
 public class MemoryMemberRepository implements MemberRepository{
 

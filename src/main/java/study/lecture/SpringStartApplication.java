@@ -1,13 +1,13 @@
-package todo.todo_server;
+package study.lecture;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TodoServerApplication {
+public class SpringStartApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TodoServerApplication.class, args);
+		SpringApplication.run(SpringStartApplication.class, args);
 	}
 
 }

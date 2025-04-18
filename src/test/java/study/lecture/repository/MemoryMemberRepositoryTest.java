@@ -1,13 +1,11 @@
-package todo.todo_server.repository;
+package study.lecture.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
-import java.util.Optional;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
-import todo.todo_server.domain.Member;
+import study.lecture.domain.Member;
 
 class MemoryMemberRepositoryTest {
   MemoryMemberRepository repository = new MemoryMemberRepository();

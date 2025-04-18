@@ -1,13 +1,17 @@
-package todo.todo_server.service;
+package study.lecture.service;
 
 import java.util.List;
 import java.util.Optional;
-import todo.todo_server.domain.Member;
-import todo.todo_server.repository.MemberRepository;
-import todo.todo_server.repository.MemoryMemberRepository;
+import study.lecture.domain.Member;
+import study.lecture.repository.MemberRepository;
+import study.lecture.repository.MemoryMemberRepository;
 
 public class MemberService {
-  private final MemberRepository memberRepository = new MemoryMemberRepository();
+  private final MemberRepository memberRepository;
+
+  public MemberService(MemberRepository memberRepository) {
+    this.memberRepository = memberRepository;
+  }
 
   /**
    * 회원 가입
