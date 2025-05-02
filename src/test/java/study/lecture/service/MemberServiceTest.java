@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.util.Optional;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import study.lecture.domain.Member;
 import study.lecture.repository.MemberRepository;
@@ -13,13 +14,13 @@ import study.lecture.repository.MemoryMemberRepository;
 
 class MemberServiceTest {
 
-  MemberService memberService = new MemberService();
+  MemberService memberService;
   MemoryMemberRepository memberRepository;
 
   @BeforeEach
   public void BeforeEach(){
-    MemberRepository memberRepository = new MemoryMemberRepository();
-    MemberService memberService = new MemberService(memberRepository);
+    memberRepository = new MemoryMemberRepository();
+    memberService = new MemberService(memberRepository);
   }
 
   @AfterEach

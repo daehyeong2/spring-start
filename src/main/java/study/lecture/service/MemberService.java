@@ -2,9 +2,10 @@ package study.lecture.service;
 
 import java.util.List;
 import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import study.lecture.domain.Member;
 import study.lecture.repository.MemberRepository;
-import study.lecture.repository.MemoryMemberRepository;
 
 public class MemberService {
   private final MemberRepository memberRepository;
