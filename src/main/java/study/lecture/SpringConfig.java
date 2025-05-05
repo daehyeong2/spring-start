@@ -5,11 +5,8 @@ import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import study.lecture.repository.JdbcMemberRepository;
-import study.lecture.repository.JdbcTemplateMemberRepository;
-import study.lecture.repository.JpaMemberRepository;
+import study.lecture.aop.TimeTraceAop;
 import study.lecture.repository.MemberRepository;
-import study.lecture.repository.MemoryMemberRepository;
 import study.lecture.service.MemberService;
 
 @Configuration
